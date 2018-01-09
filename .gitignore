@@ -2,6 +2,7 @@ node_modules/
 dest/
 tmp/
 .DStore
+.DS_Store
 .framgia-ci-reports/**
 !.framgia-ci-reports/.keep
 .framgia-ci-result.temp.yml
