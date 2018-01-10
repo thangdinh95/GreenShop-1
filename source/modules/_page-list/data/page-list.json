@@ -1,11 +1,24 @@
 {
   "pageList": {
-    "data": [{
-        "title": "Style Guides",
-        "url": "styleguides"
+    "data": [
+      {
+        "title": "Elements",
+        "url": "elements"
       },{
-        "title": "P000 welcome",
+        "title": "Welcome",
         "url": "p000-welcome"
+      },{
+        "title": "Login",
+        "url": "p001-login"
+      },{
+        "title": "User profile and Settings",
+        "url": "p002-p003-user-profile-and-settings"
+      },{
+        "title": "Messages",
+        "url": "p005-messages"
+      },{
+        "title": "Billings",
+        "url": "p006-billings"
       }
     ]
   }
