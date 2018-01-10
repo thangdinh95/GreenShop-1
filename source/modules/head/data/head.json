@@ -1,10 +1,26 @@
 {
   "head": {
     "home": {
-      "title": "Main",
-      "mobile": true,
-      "meta": "default",
-      "og": "default"
+      "title": "Fram.io - Demo - Home"
+    },
+    "elements": {
+      "title": "Elements"
+    },
+    "p000-welcome": {
+      "title": "P000 Welcome"
+    },
+    "p001-login": {
+      "title": "P001 Login"
+    },
+    "p002-p003-user-profile-and-settings": {
+      "title": "P002 P003 User profile and Settings"
+    },
+    "p005-messages": {
+      "title": "P005 Messages"
+    }
+    ,
+    "p006-billings": {
+      "title": "P005 Billings"
     }
   }
 }

@@ -1,0 +1,81 @@
+.btn {
+  font-weight: $font-weight-light;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+
+  @include respond-to(smallphone-and-down) {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  &--primary-dark {
+    background: $gradient-dark;
+    color: $white;
+    border: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $gray-200;
+    }
+  }
+
+  &--secondary-dark {
+    background: $gradient-secondary-dark;
+    color: $white;
+    border: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $gray-200;
+    }
+  }
+}
+
+.btn-transparent {
+  background-color: none;
+  border: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: none;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+.btn-xs {
+  letter-spacing: 0;
+  font-size: .5rem;
+  padding: .35rem .65rem;
+}
+
+.fr-btn-primary {
+  background: $gradient-primary;
+  color: $white;
+  border: 0;
+
+  &:hover {
+    background: $orange-primary;
+  }
+}
+
+.fr-btn-secondary {
+  background: $gradient-secondary;
+  color: $white;
+  border: 0;
+
+  &:hover {
+    background: $gray-secondary;
+  }
+}
+
+.btn-group {
+  .btn {
+    border-right: .13rem solid $white;
+  }
+}
+
+

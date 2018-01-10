@@ -1,0 +1,90 @@
+include modules/head/head
+include modules/heading/heading
+include modules/elements/elements
+include modules/sidebar/sidebar
+include modules/style-guide/style-guide
+
+doctype html
+html
+  head
+    +head(head.elements)
+
+  body
+    +style-guide(styleGuide.data)
+
+      +set-block('changelog')
+        +changelog(changelog.data)
+
+      +set-block('colors')
+        ul.guide-content__list
+          li.guide-content__list__item
+            div.card-deck
+              +colorPalette('orange-primary', '#ee6313')
+              +colorPalette('gray-secondary', '#8b8b8b')
+              +colorPalette('orange-light', '#f5a623')
+              +colorPalette('orange-dark', '#930700')
+
+      +set-block('typo')
+        +typo(typo.data)
+
+      +set-block('icons')
+        +iconsGuide('anticon', 'https://ant.design/docs/resource/download')
+        ul.guide-content__list.d-flex.w-50.justify-content-between.align-items-start
+          li.guide-content__list__item.h4.pt-3
+            +anticon('user')
+          li.guide-content__list__item.h4.pt-3
+            +anticon('lock')
+          li.guide-content__list__item.h4.pt-3
+            +anticon('Safety')
+          li.guide-content__list__item.h4.pt-3
+            +anticon('gift')
+          li.guide-content__list__item.h4.pt-3
+            +anticon('bulb')
+          li.guide-content__list__item.h4.pt-3
+            +anticon('bells')
+
+      +set-block('buttons')
+        ul.guide-content__list
+          li.guide-content__list__item
+            +button('primary', 'anchor').fr-btn-primary
+            +button('primary outline', 'anchor').btn-outline-primary
+            +button('primary small', 'anchor').fr-btn-primary.btn-sm
+          li.guide-content__list__item
+            +button('secondary', 'anchor').fr-btn-secondary
+            +button('secondary outline', 'anchor').btn-outline-secondary
+            +button('secondary small', 'anchor').fr-btn-secondary.btn-sm
+          li.guide-content__list__item
+            +button-dropdown('Dropdown button', 'anchor', 'dropdown-button', 'Option 1', 'Option 2', 'Option 3').btn-danger
+            +button-dropdown-split('Dropdown button split', 'Option 1', 'Option 2', 'Option 3').btn-danger.mt-2
+            +button-dropdown('Dropdown button transparent', 'anchor', 'dropdown-button', 'Option 1', 'Option 2', 'Option 3').btn-transparent.mt-2
+
+      +set-block('forms')
+        p All fields should be shown with a label. Both the label, placeholder and border has the colour #999999. Other colours can be found in the sceme.
+        ul.guide-content__list
+          li.guide-content__list__item
+            +input('Input/text required', 'user')(required placeholder='Username')
+          li.guide-content__list__item
+            +input('Input/text disabled', 'user')(disabled placeholder='Username')
+          li.guide-content__list__item
+            +input('Input/password valid', 'lock', 'password', 'is-valid')(placeholder='Correct password')
+          li.guide-content__list__item
+            +input('Input/password invalid', 'lock', 'password', 'is-invalid', 'Please check your password')(placeholder='Wrong password')
+          li.guide-content__list__item
+            +textarea('Textarea')(rows='5')
+          li.guide-content__list__item
+            +selectbox('This is default selectbox ', 'Option 1', 'Option 2')
+          li.guide-content__list__item
+            +radio('Radio selected')(checked name='radio demo')
+            +radio('Radio normal')(name='radio demo')
+            +radio('Radio normal')(name='radio demo')
+            +radio('Radio disabled')(disabled name='radio demo')
+          li.guide-content__list__item
+            +checkbox('Checkbox selected')(checked name='checkbox demo')
+            +checkbox('Checkbox normal')(name='checkbox demo')
+            +checkbox('Checkbox normal')(name='checkbox demo')
+            +checkbox('Checkbox disabled')(disabled name='checkbox demo')
+      +set-block('margins-and-paddings')
+        +marginsAndPaddings()
+
+
+    script(type='text/javascript', src='js/main.js')
