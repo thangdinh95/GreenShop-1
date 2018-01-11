@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  border: solid 1px $green;
+  border-radius: 20px;
+  padding: 9px 27px;
+  padding-bottom: 11px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+  &--green {
+    color: $white;
+    background-color: $green;
+    &:hover {
+      color: $green;
+      background-color: $white;
+    }
+  }
+  &--white {
+    color: $green;
+    background-color: $white;
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+  }
+  &__name {
+    font-size: 12px;
+  }
+}
