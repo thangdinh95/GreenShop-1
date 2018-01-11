@@ -1,0 +1,163 @@
+.navigation {
+  position: relative;
+  z-index: 101;
+  background-color: $green;
+  &__inner {
+    @include clearfix;
+  }
+}
+.nav-block {
+  display: block;
+  float: left;
+  transition: transform .3s ease-out;
+  transform-origin: left;
+}
+.menu-btn {
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  padding: 15px 37px 14px 1px;
+  cursor: pointer;
+  user-select: none;
+}
+.main-menu {
+  float: left;
+  @include clearfix;
+  &__item {
+    float: left;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        transform: rotate(0);
+        transition: {
+          property: transform;
+          duration: .15s;
+          timing-function: ease-in-out;
+          delay: .1s * ($i - 1);
+        }
+      }
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 18px 14px;
+    color: $white;
+    &--caret::after {
+      content: '\f0d7';
+      font-family: 'FontAwesome';
+      margin-left: 6px;
+    }
+    &:hover,
+    &:active,
+    &.active {
+      background-color: $green-darker;
+      color: $white;
+    }
+  }
+}
+@for $i from 1 through 6 {
+  .main-menu__item.active:nth-child(#{$i}) {
+    transform: rotateX(90deg);
+    transition: {
+      property: transform;
+      duration: .2s;
+      timing-function: ease-in-out;
+      delay: .1s * (6 - $i);
+    }
+  }
+}
+.btn-dropdown {
+  position: relative;
+}
+.menu-dropdown {
+  display: none;
+  min-width: 150px;
+  position: absolute;
+  z-index: 102;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  border: 0;
+  background-color: $gray-55;
+  box-shadow: 0 2px 2px $black-opacity-2;
+}
+.submenu {
+  &__item + &__item {
+    border-top: 1px solid $gray-50;
+  }
+  &__link {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 18px 14px;
+    color: $white;
+    &:hover,
+    &:active,
+    &.active {
+      background-color: $green-darker;
+      color: $white;
+    }
+  }
+}
+.search-btn,
+.cart-btn {
+  display: none;
+}
+.cart-btn {
+  margin-right: -10px;
+}
+@include respond-to ('tablet-and-down') {
+  .navigation__inner {
+    position: relative;
+  }
+  .nav-block {
+    display: none;
+    width: calc(100% + 30px);
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: -15px;
+    float: none;
+    background-color: $gray-15;
+    box-shadow: 0 1px 2px $black-opacity-2;
+  }
+  .main-menu {
+    display: block;
+    width: 100%;
+    float: none;
+    &__item {
+      float: none;
+      & + & {
+        border-top: 1px solid $gray-20;
+      }
+    }
+    &__link {
+      display: block;
+      text-align: center;
+    }
+  }
+  .menu-dropdown {
+    position: static;
+    float: none;
+  }
+  .submenu {
+    &__link {
+      text-align: center;
+    }
+  }
+  .search-btn,
+  .cart-btn {
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    color: $white;
+    line-height: 49px;
+    padding: 0 10px;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+    }
+  }
+}
