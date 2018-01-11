@@ -8,17 +8,19 @@
 @import 'base/images';
 
 @import 'vendors/bootstrap-override-variable';
-@import 'bootstrap.min.css';
+@import 'node_modules/bootstrap/scss/bootstrap';
 @import 'font-awesome';
-
-@import 'layout/grid';
-@import 'layout/content';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/section';
 
 @import 'components/ui-elements';
 @import 'components/title';
 @import 'components/navigation-tab';
 @import 'components/table';
 @import 'components/block';
+@import 'components/footer-sublist';
+
+@import 'layout/body';
+@import 'layout/grid';
+@import 'layout/content';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section';
