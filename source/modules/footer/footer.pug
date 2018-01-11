@@ -1,5 +1,66 @@
-mixin footer()
-  //Footer
-  footer Footer
-  //./Footer
+include ../footer-sublist/footer-sublist
+mixin footer
+  footer.footer
+    .footer-mail
+      .container
+        .footer-mail__wrap
+          .footer-mail__element.footer-mail__follow
+            h6.footer-mail__heading.title-size-14 KÊNH THÔNG TIN TỪ CHÚNG TÔI :
+            ul.footer-mail__social
+              - var list = ['facebook', 'twitter', 'youtube-play', 'vimeo']
+              each item in list
+                li.footer-mail__item
+                  a.footer-mail__link
+                    i.footer-mail__icon.fa(class="fa-"+item)
+          .footer-mail__element.footer-mail__form.ml-auto
+            h6.footer-mail__heading.footer-mail__heading--form.title-size-14.d-inline-block ĐĂNG KÍ NHẬN EMAIL TỪ CHÚNG TÔI
+            form.footer-mail__register.d-inline-block
+              input.footer-mail__input.border-0
+              button.footer-mail__submit.border-0(type="submit")
+                i.footer-mail__icon--plane.fa.fa-paper-plane
+    .footer-main
+      .container
+        .row
+          .col-xl-4.col-md-12
+            .footer-main__element.footer-main__about
+              img.footer-main__logo(src="../../images/logo.png", alt="")
+              .footer-main__content
+                p.footer-main__text Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+              .footer-main__contact.footer-main__contact--phone
+                i.footer-main__icon.footer-main__icon--phone.fa.fa-mobile
+                | Điện thoại : (84-4) 66.558.868
+              .footer-main__contact.footer-main__contact--mail
+                i.footer-main__icon.footer-main__icon--mail.fa.fa-envelope-o
+                | Email: info@dkt.com.vn
+          .col-xl-8.col-md-12
+            .footer-main__element.footer-main__info
+              .row
+                .col-xl-4.col-md-3.col-sm-6.col-12
+                  +footer-sublist('THÔNG TIN KHÁCH HÀNG', 'Tài khoản của tôi', 'Sản phẩm yêu thích', 'Lịch sử mua hàng', 'Chính sách đổi trả', 'Góp ý, khiếu nại')
+                .col-xl-3.col-md-3.col-sm-6.col-12
+                  +footer-sublist('HỖ TRỢ DỊCH VỤ', 'Hệ thống cửa hàng', 'Hướng dẫn mua hàng', 'Hướng dẫn thanh toán', 'Tích điểm đổi quà', 'Câu hỏi thường gặp')
+                .col-xl-3.col-md-3.col-sm-6.col-12
+                  +footer-sublist('CHÍNH SÁCH ƯU ĐÃI', 'Chính sách giao hàng', 'Chính sách đổi trả sản phẩm', 'Chính sách bảo hành', 'Giới thiệu sản phẩm mới', 'Chính sách trả góp')
+                .col-xl-2.col-md-3.col-sm-6.col-12
+                  +footer-sublist('TIN TỨC', 'Tin mới', 'Khuyến mại', 'Tuyển dụng', 'Download', 'Tags')
+    .footer-more
+      .container
+        .footer-more__wrap.d-flex
+          ul.footer-more__list.footer-more__list--menu
+            - var list = ['Sitemap', 'Danh mục sản phẩm', 'Hợp tác', 'Thông tin liên hệ', 'Câu hỏi thường gặp']
+            each item in list
+              li.footer-more__item
+                a.footer-more__link #{item}
+          ul.footer-more__list.footer-more__list--card.ml-auto
+            - var list = ['cc-visa', 'cc-mastercard', 'cc-paypal', 'cc-discover']
+            each item in list
+              li.footer-more__item.footer-more__item--icon
+                a.footer-more__link
+                  i.footer-more__icon.fa(class="fa-"+item)
+    .footer-copyright.text-center
+      p.footer-copyright__text
+        | Thiết kế bởi
+        a.footer-copyright__link(href="") Bizweb
+        i.footer-copyright__icon.fa.fa-copyright
+  //- Main js
   script(type='text/javascript', src='js/main.js')

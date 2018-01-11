@@ -1,0 +1,10 @@
+mixin footer-sublist(heading, item1, item2, item3, item4, item5)
+  .footer-sublist
+    h6.footer-sublist__heading.title-size-14 #{heading}
+    ul.footer-sublist__list
+      - var list = [item1, item2, item3, item4, item5]
+      each item in list
+        li.footer-sublist__item
+          a.footer-sublist__link
+            i.footer-sublist__icon.fa.fa-angle-right
+            | #{item}

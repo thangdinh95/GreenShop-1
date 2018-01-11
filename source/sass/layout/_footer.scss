@@ -1,0 +1,172 @@
+.footer {
+  color: $gray-55;
+  background-color: $gray-20;
+  &-mail,
+  &-main {
+    border-bottom: solid 1px $gray-30;
+  }
+  &-mail {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    @include respond-to('tablet-and-down') {
+      padding-bottom: 35px;
+    }
+    &__wrap {
+      display: flex;
+      @include respond-to('phone-and-down') {
+        display: block;
+      }
+    }
+    &__element {
+      @include respond-to('tablet-and-down') {
+        width: 100%;
+      }
+    }
+    &__follow {
+      @include respond-to('phone-and-down') {
+        margin-bottom: 25px;
+      }
+    }
+    &__social {
+      padding: 0;
+      margin-left: -10px;
+    }
+    &__heading {
+      font-weight: 700;
+      line-height: 26px;
+      @include respond-to('phone-and-down') {
+        color: $green;
+      }
+      &--form {
+        width: 150px;
+        @include respond-to('tablet-and-down') {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__item {
+      display: inline-block;
+      transition: 0.3s;
+    }
+    &__item:hover {
+      color: $green;
+      cursor: pointer;
+    }
+    &__link {
+      padding: 0 10px;
+    }
+    &__input,
+    &__submit {
+      height: 46px;
+    }
+    &__register {
+      float: right;
+      margin-left: 80px;
+      @include respond-to('desktop-and-down') {
+        margin-left: 30px;
+      }
+      @include respond-to('tablet-and-down') {
+        width: 100%;
+        float: unset;
+        margin-left: 0;
+      }
+    }
+    &__input {
+      width: 437px;
+      padding: 0 15px;
+      float: left;
+      @include respond-to('desktop-and-down') {
+        width: 350px;
+      }
+      @include respond-to('tablet-and-down') {
+        width: calc(100% - 50px);
+      }
+    }
+    &__submit {
+      width: 50px;
+      color: $white;
+      text-align: center;
+      background-color: $green;
+      transition: 0.3s;
+    }
+    &__submit:hover {
+      background-color: $green-darker;
+      cursor: pointer;
+      .footer-mail__icon--plane {
+        text-shadow: 0 5px 10px $black-opacity-3;
+        transition: 0.3s;
+      }
+    }
+  }
+  &-main {
+    font-size: 12px;
+    padding: 40px 0;
+    @include respond-to('phone-and-down') {
+      padding-bottom: 0;
+    }
+    &__logo {
+      margin-bottom: 10px;
+    }
+    &__text {
+      line-height: 23px;
+    }
+    &__contact {
+      margin-bottom: 10px;
+      @include respond-to('phone-and-down') {
+        display: none;
+      }
+    }
+    &__icon {
+      color: $green;
+      margin-right: 10px;
+      &--phone {
+        font-size: 17px;
+      }
+    }
+    &__info {
+      padding-top: 25px;
+    }
+  }
+  &-more {
+    padding: 15px 0;
+    @include respond-to('phone-and-down') {
+      display: none;
+    }
+    &__item {
+      display: inline-block;
+      font-size: 12px;
+      padding: 0 7px;
+      transition: 0.3s;
+      &:first-child {
+        padding-left: 0;
+      }
+      &--icon {
+        font-size: 19px;
+        padding: 0 6px;
+      }
+    }
+    &__item:hover {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+  &-copyright {
+    background-color: $gray-25;
+    padding: 15px 0;
+    &__text {
+      font-size: 14px;
+      color: $white;
+      margin: 0;
+    }
+    &__link {
+      transition: 0.3s;
+    }
+    &__link:hover {
+      color: $green;
+    }
+  }
+}
+.footer-sublist {
+  margin-bottom: 35px;
+}

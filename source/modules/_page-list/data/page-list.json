@@ -6,6 +6,9 @@
       },{
         "title": "P000 welcome",
         "url": "p000-welcome"
+      },{
+        "title": "Footer",
+        "url": "footer"
       }
     ]
   }

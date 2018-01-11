@@ -1,0 +1,21 @@
+.footer-sublist {
+  &__heading {
+    color: $green;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__item {
+    font-size: 12px;
+    padding: 9px 0;
+    transition: 0.3s;
+  }
+  &__item:hover {
+    color: $green;
+    padding-left: 5px;
+    cursor: pointer;
+  }
+  &__icon {
+    vertical-align: 1px;
+    margin-right: 3px;
+  }
+}
