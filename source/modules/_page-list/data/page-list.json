@@ -12,10 +12,12 @@
       },{
         "title": "header",
         "url": "header"
-      }
-      ,{
+      },{
         "title": "Button",
         "url": "button"
+      },{
+        "title": "Sidebar general",
+        "url": "sidebar-general"
       }
     ]
   }

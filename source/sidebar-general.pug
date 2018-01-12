@@ -1,0 +1,11 @@
+include modules/head/head
+include modules/sidebar/sidebar
+
+doctype html
+html
+  +head(head.home)
+  body
+    .container
+      .row
+        .col-lg-3.col-md-4
+          +sidebar('general', data)

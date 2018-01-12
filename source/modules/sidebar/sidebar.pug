@@ -1,0 +1,46 @@
+mixin sidebar(type, data)
+  aside.sidebar
+    h5.heading.sidebar__heading
+      span.heading__text Danh mục sản phẩm
+    ul.sidebar-list.sidebar__list1
+      each item in data.list1
+        li.sidebar-list__item
+          a.sidebar-list__link(href="#!")
+            i.fa.fa-chevron-right
+            | #{item}
+    if (type==='general')
+      h5.heading.sidebar__heading
+        span.heading__text Tìm theo giá
+      ul.sidebar-list.sidebar__list2
+        each item in data.list2
+          li.sidebar-list__item
+            a.sidebar-list__link(href="#!")
+              i.fa.fa-chevron-right
+              | #{item}
+      h5.heading.sidebar__heading
+        span.heading__text Tìm theo màu
+      ul.pickcolor
+        li.pickcolor__item
+          a.pickcolor__link(href="#!")
+            span.pickcolor__color.pickcolor__color--lightgreen
+            | Xanh cây
+        li.pickcolor__item
+          a.pickcolor__link(href="#!")
+            span.pickcolor__color.pickcolor__color--redishorange
+            | Đỏ cam
+        li.pickcolor__item
+          a.pickcolor__link(href="#!")
+            span.pickcolor__color.pickcolor__color--purple
+            | Tím
+        li.pickcolor__item
+          a.pickcolor__link(href="#!")
+            span.pickcolor__color.pickcolor__color--blue
+            | Xanh trời
+        li.pickcolor__item
+          a.pickcolor__link(href="#!")
+            span.pickcolor__color.pickcolor__color--yellow
+            | Vàng
+        li.pickcolor__item
+          a.pickcolor__link(href="#!")
+            span.pickcolor__color.pickcolor__color--pink
+            | Hồng
