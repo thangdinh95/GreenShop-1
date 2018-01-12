@@ -1,0 +1,97 @@
+.product-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: solid 1px $gray-90;
+  @include respond-to('desktop-and-down') {
+    padding-left: 20px;
+  }
+  @include respond-to('phone-and-down') {
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 20px;
+  }
+  &__element {
+    display: inline-block;
+    &--left {
+      margin-right: 20px;
+      @include respond-to('tablet-and-down') {
+        margin-right: 0;
+      }
+      @include respond-to('phone-and-down') {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &__images {
+    width: 230px;
+  }
+  &__main {
+    padding: 20px;
+    @include respond-to('phone-and-down') {
+      margin-top: 20px;
+    }
+  }
+  &__heading {
+    font-family: $roboto;
+    font-size: 18px;
+    color: $gray-20;
+    font-weight: 400;
+    margin-bottom: 0;
+    transition: 0.3s;
+    &:hover {
+      color: $green;
+    }
+  }
+  &__vote {
+    margin-bottom: 3px;
+  }
+  &__stars {
+    display: inline-block;
+    font-size: 13px;
+    color: $gold;
+  }
+  &__text {
+    font-size: 12px;
+    color: $gray-40;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  &__rate {
+    font-size: 16px;
+    color: $red;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &__unit {
+    font-size: 14px;
+  }
+  &__btn {
+    display: inline-block;
+    margin: 0 4px;
+    @include respond-to('tablet-and-down') {
+      margin: 0;
+    }
+    &:hover {
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  &__link {
+    &--btn {
+      display: flex;
+      width: 46px;
+      height: 46px;
+      font-size: 13px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $gray-90;
+      border-radius: 50%;
+      transition: all .3s;
+      &:hover {
+        background-color: $green;
+      }
+    }
+  }
+}

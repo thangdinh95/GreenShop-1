@@ -21,8 +21,10 @@
       },{
         "title": "Sidebar news",
         "url": "sidebar-news"
-      }
-      ,{
+      },{
+        "title": "Product",
+        "url": "product"
+      },{
         "title": "Popup",
         "url": "popup"
       }
