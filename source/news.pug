@@ -1,0 +1,31 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/sidebar/sidebar
+include modules/breadcrumb/breadcrumb
+include modules/pagination/pagination
+include modules/news/news
+
+doctype html
+html
+  +head
+  body
+    +header
+    .container
+      +breadcumb('Home', 'Cây dạ lam')
+      .news-page
+        .row
+          .col-lg-3.col-md-4
+            +sidebar('news', data)
+          .col-lg-9.col-md-8
+            ul.news-list
+              li.news-list__item
+                +large-news('images/news/large-news-1.png', 'Cách bố trí hoa chậu trước cửa ấn tượng ngay lần đầu tiên')
+              li.news-list__item
+                +large-news('images/news/large-news-2.png', 'Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách')
+              li.news-list__item
+                +large-news('images/news/large-news-3.png', '7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng')
+            nav.news-paging
+              +pagination(4)
+    +footer
+    script(src="js/main.js")

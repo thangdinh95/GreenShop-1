@@ -24,10 +24,14 @@
 @import 'components/sidebar-list';
 @import 'components/tags';
 @import 'components/smallnews';
+@import 'components/medium-news';
+@import 'components/large-news';
 @import 'components/product';
 @import 'components/state';
 @import 'components/product-grid';
 @import 'components/product-header';
+@import 'components/breadcrumb';
+@import 'components/pagination';
 
 @import 'layout/body';
 @import 'layout/grid';
@@ -36,3 +40,5 @@
 @import 'layout/footer';
 @import 'layout/section';
 @import 'layout/sidebar';
+
+@import 'page/news';

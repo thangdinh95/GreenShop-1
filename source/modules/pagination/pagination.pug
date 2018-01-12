@@ -1,0 +1,10 @@
+mixin pagination(page)
+  ul.pagination.paging
+    li.page-item.paging__item.paging__item--first
+      a.page-link.paging__link.paging__link--first(href="#!") Trang trước
+    - var n = 1;
+    while n <= page
+      li.page-item.paging__item
+        a.page-link.paging__link(class={'active': n === 1}, href="#!")= n++
+    li.page-item.paging__item
+      a.page-link.paging__link.paging__link--last(href="#!") Trang cuối

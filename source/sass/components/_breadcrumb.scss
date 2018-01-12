@@ -1,0 +1,24 @@
+.page-breadcrumb {
+  padding: 0;
+  margin: 16px 0 75px;
+  background-color: inherit;
+  &__item {
+    @include clearfix;
+    &,
+    &.active {
+      color: $green-text;
+      font-size: 12px;
+    }
+    &+&::before {
+      padding: 0 3px;
+      float: left;
+    }
+  }
+  &__link {
+    color: $gray-55;
+    &:hover {
+      color: $green-text;
+      text-decoration: underline;
+    }
+  }
+}

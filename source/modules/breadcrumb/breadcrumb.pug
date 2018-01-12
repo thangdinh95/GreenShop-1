@@ -1,0 +1,8 @@
+mixin breadcumb(...list)
+  ul.breadcrumb.page-breadcrumb
+    each item, index in list
+      if (index === list.length - 1)
+        li.breadcrumb-item.active.page-breadcrumb__item= item
+      else
+        li.breadcrumb-item.page-breadcrumb__item
+          a.page-breadcrumb__link(href="#!")= item
