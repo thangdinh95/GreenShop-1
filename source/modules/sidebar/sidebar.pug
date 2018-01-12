@@ -1,3 +1,5 @@
+include ../news/news
+
 mixin sidebar(type, data)
   aside.sidebar
     h5.heading.sidebar__heading
@@ -44,3 +46,16 @@ mixin sidebar(type, data)
           a.pickcolor__link(href="#!")
             span.pickcolor__color.pickcolor__color--pink
             | Hồng
+    if (type==='news')
+      h5.heading.sidebar__heading
+        span.heading__text Tin tức nổi bật
+      ul.sidebar__newslist
+        each item in data.news
+          li.sidebar__news
+            +smallnews(item.img, item.title)
+      h5.heading.sidebar__heading
+        span.heading__text Blog tag
+      ul.tags.sidebar__tags
+        each item in data.tags
+          li.tags__tag
+            a.tags__link(href="#!")= item

@@ -232,7 +232,7 @@ gulp.task('compile-js', function() {
 
 // = Build image
 gulp.task('compile-images', function() {
-  return gulp.src(source + '/images/*.*')
+  return gulp.src(source + '/images/**/*.*')
   .pipe(gulp.dest(dest + '/images'));
 });
 

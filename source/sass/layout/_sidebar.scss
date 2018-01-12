@@ -8,6 +8,15 @@
   &__list2 {
     margin-bottom: 42px;
   }
+  &__newslist {
+    margin: 25px 0;
+  }
+  &__news {
+    padding: 10px 0;
+  }
+  &__tags {
+    margin-top: 27px;
+  }
 }
 .pickcolor {
   @include clearfix;
