@@ -1,0 +1,20 @@
+.tags {
+  @include clearfix;
+  &__tag {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  &__link {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 16px;
+    color: $gray-55;
+    border: 1px solid $gray-75;
+    &:hover {
+      border-color: transparent;
+      background-color: $green;
+      color: $gray-90;
+    }
+  }
+}

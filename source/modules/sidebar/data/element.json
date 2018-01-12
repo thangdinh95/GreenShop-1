@@ -13,6 +13,33 @@
       "600.000 Đ - 800.000 Đ",
       "800.000 Đ - 1.000.000 Đ",
       "1.000.000 Đ - 2.000.000 Đ"
+    ],
+    "tags": ["Cây văn phòng",
+      "Cây phát lộc",
+      "Cây xanh",
+      "Cây trang trí",
+      "Cây", "Plants",
+      "Sức khoẻ",
+      "Quà tặng",
+      "Lưu niệm"
+    ],
+    "news": [
+      {
+        "img": "images/news/smallnews-1.png",
+        "title": "Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách"
+      },{
+        "img": "images/news/smallnews-2.png",
+        "title": "Những sai lầm nên tránh khi bố trí cây xanh trong nhà"
+      },{
+        "img": "images/news/smallnews-3.png",
+        "title": "7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng"
+      },{
+        "img": "images/news/smallnews-4.png",
+        "title": "Hướng dẫn lựa chọn cây cảnh bố trí trong văn phòng"
+      },{
+        "img": "images/news/smallnews-5.png",
+        "title": "4 loại cây cảnh thích hợp bày trí ở khu vực đại sảnh"
+      }
     ]
   }
 }

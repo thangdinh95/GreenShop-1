@@ -1,0 +1,26 @@
+.smallnews {
+  @include clearfix;
+  &__imgwrap {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: $gray-95;
+    border: 1px solid $gray-90;
+    overflow: hidden;
+    float: left;
+    margin-right: 11px;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__name {
+    padding-top: 4px;
+    font-size: 12px;
+    color: $gray-40;
+    line-height: 18px;
+    &:hover {
+      color: $green-text;
+      text-decoration: underline;
+    }
+  }
+}

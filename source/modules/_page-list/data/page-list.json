@@ -18,6 +18,9 @@
       },{
         "title": "Sidebar general",
         "url": "sidebar-general"
+      },{
+        "title": "Sidebar news",
+        "url": "sidebar-news"
       }
     ]
   }
