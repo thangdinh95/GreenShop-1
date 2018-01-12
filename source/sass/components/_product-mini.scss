@@ -1,0 +1,32 @@
+.product-mini {
+  @include clearfix;
+  &__imgwrap {
+    display: block;
+  }
+  &__img {
+    width: 77px;
+    height: 77px;
+    float: left;
+  }
+  &__info {
+    margin-left: 90px;
+    padding-top: 5px;
+  }
+  &__name {
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray-35;
+    margin-bottom: 0;
+  }
+  &__rate {
+    font-size: 14px;
+    color: $gold;
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-size: 14px;
+    font-family: $roboto-slab;
+    color: $red;
+    margin-bottom: 0;
+  }
+}

@@ -27,7 +27,7 @@
     width: 100%;
   }
   &__info {
-    padding: 26px 0 32px;
+    padding: 20px 0 30px;
     background-color: $white;
     border: 1px solid $gray-90;
     border-top: 0;
@@ -36,12 +36,12 @@
   &__name {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   &__rate {
     font-size: 14px;
     color: $gold;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
   &__price {
     font-family: $roboto-slab;

@@ -1,4 +1,19 @@
 include ../button/button
+
+mixin product-mini(img, name, price)
+  .product-mini
+    a.product-mini__imgwrap(href="#!")
+      img.product-mini__img(src=img , alt="")
+    .product-mini__info
+      h6.product-mini__name
+        a(href="#!")= name
+      .product-mini__rate
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-half-o
+      p.product-mini__price= price
 mixin product-list(src, name, intro, rate)
   .product-list
     .product-list__element.product-list__element--left
@@ -26,7 +41,7 @@ mixin product-list(src, name, intro, rate)
 mixin product-grid(state, text)
   .product-grid
     .product-grid__imgwrap
-      img.product-grid__img(src="images/product/1.png", alt="product img")
+      img.product-grid__img(src="images/1.png", alt="product img")
       if (state)
         .state(class="state--"+state)= text
       .product-grid__btnwrap

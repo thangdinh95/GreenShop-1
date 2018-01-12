@@ -1,0 +1,72 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/news/news
+include modules/product/product
+
+doctype html
+html
+  +head
+  body
+    +header(true)
+    main.home-main
+      .container
+        section.home-product-1
+          h5.heading
+            span.heading__text Sản phẩm nổi bật
+          .row
+            .col-lg-6
+              .row
+                .col-md-12
+                  +product-grid("green", "NEW")
+                .col-md-6
+                  +product-grid
+                .col-md-6
+                  +product-grid
+            .col-lg-6
+              .row
+                .col-md-6
+                  +product-grid("red", "-50%")
+                .col-md-6
+                  +product-grid("green", "NEW")
+                .col-md-12
+                  +product-grid("red", "-50%")
+        .row
+          .col-xl-3.col-lg-4
+            section.home-product-2
+              h5.heading
+                span.heading__text Sản phẩm mua nhiều
+              ul.aside-list
+                each item in [1, 2, 3, 4, 5, 6]
+                  li.aside-list__item
+                    +product-mini('images/product/1.png', 'Cây chân chim', '250.000 đ')
+          .col-xl-9.col-lg-8
+            section.home-product-3
+              h5.heading
+                span.heading__text Sản phẩm khuyến mại
+              .home-slider-wrap
+                .home-slider1.owl-carousel.js-home-slider1
+                  each item in [1, 2, 3, 4, 5, 6]
+                    .home-slider1__slide
+                      +product-grid("red", "-25%")
+                      +product-grid
+        section.home-ads
+          img.home-ads__img(src="images/home-ads.png", alt="")
+        section.home-product-4
+          h5.heading
+            span.heading__text Sản phẩm mới
+          .home-slider-wrap
+            .home-slider2.owl-carousel.js-home-slider2
+              each item in [1, 2, 3, 4, 5, 6]
+                .home-slider2__slide
+                  +product-grid("green", "NEW")
+                  +product-grid
+        section.home-news
+          h5.heading
+            span.heading__text.home-news__heading Tin tức
+          .row
+            each item in [1, 2, 3]
+              .col-lg-4.col-md-6
+                +medium-news
+    +footer
+    script(src="js/main.js")
