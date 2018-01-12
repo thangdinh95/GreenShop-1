@@ -22,6 +22,10 @@
         "title": "Sidebar news",
         "url": "sidebar-news"
       }
+      ,{
+        "title": "Popup",
+        "url": "popup"
+      }
     ]
   }
 }

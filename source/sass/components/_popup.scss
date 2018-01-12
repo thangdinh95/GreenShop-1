@@ -1,0 +1,114 @@
+.popup {
+  width: 800px;
+  background-color: $gray-95;
+  padding: 80px 20px;
+  padding-bottom: 60px;
+  position: relative;
+  @include respond-to('tablet-and-down') {
+    width: 500px;
+    text-align: center;
+  }
+  @include respond-to('smallphone-and-down') {
+    width: 300px;
+  }
+  &__col {
+    display: inline-block;
+    float: left;
+    &--left {
+      width: 350px;
+    }
+    &--right {
+      width: calc(100% - 350px);
+    }
+    @include respond-to('tablet-and-down') {
+      width: 100%;
+    }
+  }
+  &__content {
+    color: $gray-40;
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__headings {
+    margin-bottom: 30px;
+  }
+  &__heading {
+    &--gulyesa {
+      font-family: $gulyesa;
+      font-size: 37px;
+      margin-bottom: 2px;
+      @include respond-to('smallphone-and-down') {
+        font-size: 33px;
+      }
+    }
+    &--arial {
+      font-size: 23px;
+      color: $green;
+      font-weight: 700;
+      @include respond-to('smallphone-and-down') {
+        font-size: 15px;
+      }
+    }
+  }
+  &__form {
+    border: solid 1px $gray-85;
+    margin-bottom: 10px;
+  }
+  &__input {
+    &--mail {
+      width: calc(100% - 50px);
+      height: 46px;
+      border: none;
+      border-right: solid 1px $gray-85;
+      padding: 0 15px;
+      float: left;
+    }
+    &--checkbox {
+      display: none;
+    }
+  }
+  &__text,
+  &__checkbox {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__text {
+    margin-bottom: 35px;
+  }
+  &__label {
+    padding-left: 25px;
+    margin-bottom: 0;
+    position: relative;
+    &::after {
+      content: '';
+      width: 15px;
+      height: 15px;
+      border: solid 1px $gray-85;
+      background-color: $white;
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &--checked::after {
+      border-color: $white;
+      background-color: $green;
+      box-shadow: 0px 0px 7px $gray-70;
+    }
+  }
+  &__close {
+    font-size: 18px;
+    color: $green;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
