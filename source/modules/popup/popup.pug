@@ -1,0 +1,20 @@
+mixin popup
+  .popup
+    .popup__wrap.clearfix
+      .popup__col.popup__col--left
+        img.popup__image(src="../../images/flower.png", alt="")
+      .popup__col.popup__col--right
+        .popup__content
+          .popup__headings
+            h2.popup__heading.popup__heading--gulyesa Nhận tin tức từ chúng tôi
+            h4.popup__heading.popup__heading--arial ĐĂNG KÍ EMAIL NGAY HÔM NAY
+          form.popup__form
+            input.popup__input.popup__input--mail(placeholder="Nhập email của bạn vào đây")
+            button.popup__submit.footer-mail__submit.border-0(type="submit")
+              i.popup__icon.footer-mail__icon--plane.fa.fa-paper-plane
+          p.popup__text Đăng ký email ngay hôm nay để nhận các thông tin về sự kiện và các trương chình giảm giá từ chúng tôi
+          .popup__checkbox
+            label.popup__label.js-popup__label(for='popup__input--checkbox')
+              input.popup__input.popup__input--checkbox#popup__input--checkbox(type='checkbox')
+              | Không hiển thị lại thông báo này nữa
+    button.popup__close(data-dismiss="modal") X

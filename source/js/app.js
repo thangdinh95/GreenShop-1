@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  var $window = $(window);
+  var $body = $('body');
   var $menuBtn = $('.js-menu-btn');
   var $navBlock = $('.js-nav-block');
   var $menuItem = $('.js-main-menu-item');
@@ -6,9 +8,10 @@ $(document).ready(function(){
   var $headerBlock = $('.js-header-block');
   var $btnDropdown = $('.js-btn-dropdown');
   var $menuDropdown = $('.js-menu-dropdown');
+  var $popupLabel = $('.js-popup__label');
 
   $menuBtn.on('click', function(){
-    if ($(window).outerWidth() >= 992) {
+    if ($window.outerWidth() >= 992) {
       $menuItem.toggleClass('active');
     }
     else {
@@ -30,8 +33,11 @@ $(document).ready(function(){
   $menuDropdown.on('click', function(e){
     e.stopPropagation();
   });
-  $('html, body').on('click', function(){
+  $body.on('click', function(){
     $headerBlock.removeClass('active');
     $menuDropdown.slideUp(100);
+  });
+  $popupLabel.on('click', function() {
+    $(this).addClass('popup__label--checked');
   });
 });

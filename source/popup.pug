@@ -1,0 +1,13 @@
+include modules/head/head
+include modules/popup/popup
+
+doctype html
+html
+  +head
+  body
+    button.btn.btn-primary(type="button", data-toggle="modal", data-target="#myModal") Open Popup
+    .modal.fade#myModal
+      .modal-dialog
+        .modal-content
+          +popup
+    script(src="js/main.js")
