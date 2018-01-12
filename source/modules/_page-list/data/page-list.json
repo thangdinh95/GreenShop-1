@@ -25,6 +25,9 @@
         "title": "Product",
         "url": "product"
       },{
+        "title": "Header of product page",
+        "url": "product-header"
+      },{
         "title": "Popup",
         "url": "popup"
       },{
