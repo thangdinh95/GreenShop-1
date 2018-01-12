@@ -1,12 +1,6 @@
 {
   "pageList": {
     "data": [{
-        "title": "Style Guides",
-        "url": "styleguides"
-      },{
-        "title": "P000 welcome",
-        "url": "p000-welcome"
-      },{
         "title": "Footer",
         "url": "footer"
       },{
@@ -66,6 +60,9 @@
       },{
         "title": "List page",
         "url": "list"
+      },{
+        "title": "Detail page",
+        "url": "detail"
       }
     ]
   }
