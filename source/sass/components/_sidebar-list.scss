@@ -1,0 +1,23 @@
+.sidebar-list {
+  &__item {
+    padding: 9px 0 10px;
+    border-bottom: 1px solid $gray-90;
+  }
+  &__link {
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: bold;
+    color: $gray-55;
+    line-height: 20px;
+    .fa {
+      font-size: 9px;
+      margin-right: 6px;
+    }
+    &:hover {
+      color: $green-text;
+      .fa {
+        color: $gray-55;
+      }
+    }
+  }
+}
