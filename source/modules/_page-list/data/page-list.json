@@ -9,6 +9,9 @@
       },{
         "title": "Footer",
         "url": "footer"
+      },{
+        "title": "header",
+        "url": "header"
       }
       ,{
         "title": "Button",

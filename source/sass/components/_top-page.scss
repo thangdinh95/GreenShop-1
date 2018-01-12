@@ -1,0 +1,65 @@
+.top-page {
+  background-color: $gray-15;
+  &__inner {
+    @include clearfix;
+  }
+  @include respond-to('tablet-and-down') {
+    display: none;
+  }
+}
+.opentime {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 32px;
+  color: $gray-55;
+  margin-right: 32px;
+  float: left;
+  .fa {
+    margin-right: 6px;
+  }
+}
+.header-social {
+  float: left;
+  @include clearfix;
+  &__item {
+    float: left;
+  }
+  &__link {
+    display: block;
+    line-height: 32px;
+    padding: 0 14px;
+    font-size: 12px;
+    color: $gray-55;
+    border-right: 1px solid $gray-20;
+    &.first {
+      border-left: 1px solid $gray-20;
+    }
+    &:hover {
+      color: $white;
+      background-color: $green-darker;
+    }
+  }
+}
+.user-btn {
+  float: right;
+  @include clearfix;
+  &__btn {
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 18px;
+    color: $gray-55;
+    border-right: 1px solid $gray-20;
+    &.first {
+      border-left: 1px solid $gray-20;
+    }
+    .fa {
+      margin-right: 6px;
+    }
+    &:hover {
+      color: $white;
+      background-color: $green-darker;
+    }
+  }
+}

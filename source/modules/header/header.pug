@@ -1,3 +1,86 @@
+include ../banner/banner
+
 mixin header(page)
-  .header
-    h1 This is Header modules
+  header.header
+    .top-page
+      .container
+        .top-page__inner
+          span.opentime
+            i.fa.fa-clock-o
+            | Open time: 8:00 - 18:00   Monday - Sunday
+          ul.header-social
+            li.header-social__item
+              a.header-social__link.first(href="#!")
+                i.fa.fa-facebook
+            li.header-social__item
+              a.header-social__link(href="#!")
+                i.fa.fa-twitter
+            li.header-social__item
+              a.header-social__link(href="#!")
+                i.fa.fa-tumblr
+            li.header-social__item
+              a.header-social__link(href="#!")
+                i.fa.fa-vimeo
+          .user-btn
+            a.user-btn__btn.first(href="#!")
+              i.fa.fa-user
+              | Đăng nhập
+            a.user-btn__btn(href="#!")
+              i.fa.fa-user-plus
+              | Đăng ký
+    .header-body
+      .container
+        .header-body__inner
+          .header-logo
+            img.header-logo__img(src="images/logo.png", alt="")
+          .header-img
+            img.header-img__img(src="images/header-img.png", alt="")
+          a.header-cart(href="#!")
+            i.fa.fa-shopping-basket
+            | 0 sản phẩm
+          .header-block.js-header-block
+            p.hotline
+              i.fa.fa-phone
+              | Hỗ trợ :  (04) 6674 2332 - (04) 3786 8904
+            form.header-search
+              input.header-search__input(type="text", placeholder="Tìm kiếm...")
+              button.header-search__btn(type="submit")
+                i.fa.fa-search
+    nav.navigation
+      .container
+        .navigation__inner
+          .menu-btn.js-menu-btn
+            i.fa.fa-bars
+          nav.nav-block.js-nav-block
+            ul.main-menu
+              li.main-menu__item.js-main-menu-item
+                a.main-menu__link.active(href="#!") TRANG CHỦ
+              li.main-menu__item.js-main-menu-item
+                a.main-menu__link(href="#!") GIỚI THIỆU
+              li.main-menu__item.btn-dropdown.js-btn-dropdown.js-main-menu-item
+                a.main-menu__link.main-menu__link--caret(href="#!") SẢN PHẨM
+                .menu-dropdown.js-menu-dropdown
+                  ul.submenu
+                    li.submenu__item
+                      a.submenu__link(href="#!") SẢN PHẨM 1
+                    li.submenu__item
+                      a.submenu__link(href="#!") SẢN PHẨM 2
+              li.main-menu__item.btn-dropdown.js-btn-dropdown.js-main-menu-item
+                a.main-menu__link.main-menu__link--caret(href="#!") SẢN PHẨM MỚI
+                .menu-dropdown.js-menu-dropdown
+                  ul.submenu
+                    li.submenu__item
+                      a.submenu__link(href="#!") SẢN PHẨM MỚI 1
+                    li.submenu__item
+                      a.submenu__link(href="#!") SẢN PHẨM MỚI 2
+              li.main-menu__item.js-main-menu-item
+                a.main-menu__link(href="#!") TIN TỨC
+              li.main-menu__item.js-main-menu-item
+                a.main-menu__link(href="#!") LIÊN HỆ
+          a.cart-btn(href="#")
+            i.fa.fa-shopping-basket
+          a.search-btn.js-search-btn(href="#")
+            i.fa.fa-search
+
+    if (page)
+      +banner

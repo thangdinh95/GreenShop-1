@@ -1,0 +1,40 @@
+mixin banner(button)
+  .home-banner.carousel.slide(data-ride="carousel")
+    ol.carousel-indicators.home-banner__indicators
+      li.home-banner__indicator.active(data-target=".home-banner", data-slide-to="0")
+      li.home-banner__indicator(data-target=".home-banner", data-slide-to="1")
+      li.home-banner__indicator(data-target=".home-banner", data-slide-to="2")
+    .carousel-inner
+      .carousel-item.active
+        .small-banner
+          img.small-banner__img(src="images/small-banner.png", alt="First slide")
+        .large-banner
+          img.large-banner__img(src="images/large-banner.png", alt="First slide")
+          .large-banner__desc
+            h1.large-banner__name GREENSHOP
+            h1.large-banner__subname CHO THUÊ CÂY CẢNH TẾT 2016
+            p.large-banner__text (Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)
+            if (button)
+              a.button.button--green(href="#!") XEM CHI TIẾT
+      .carousel-item
+        .small-banner
+          img.small-banner__img(src="images/small-banner.png", alt="First slide")
+        .large-banner
+          img.large-banner__img(src="images/large-banner.png", alt="First slide")
+          .large-banner__desc
+            h1.large-banner__name GREENSHOP
+            h1.large-banner__subname CHO THUÊ CÂY CẢNH TẾT 2016
+            p.large-banner__text (Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)
+            if (button)
+              a.button.button--green(href="#!") XEM CHI TIẾT
+      .carousel-item
+        .small-banner
+          img.small-banner__img(src="images/small-banner.png", alt="First slide")
+        .large-banner
+          img.large-banner__img(src="images/large-banner.png", alt="First slide")
+          .large-banner__desc
+            h1.large-banner__name GREENSHOP
+            h1.large-banner__subname CHO THUÊ CÂY CẢNH TẾT 2016
+            p.large-banner__text (Miễn phí vận chuyển với những đơn hàng có trị giá trên 5.000.000 đ)
+            if (button)
+              a.button.button--green(href="#!") XEM CHI TIẾT
