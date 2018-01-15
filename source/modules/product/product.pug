@@ -1,0 +1,25 @@
+include ../button/button
+mixin product-list(src, name, intro, rate)
+  .product-list
+    .product-list__element.product-list__element--left
+      img.product-list__images(src=src, alt="")
+    .product-list__element
+      .product-list__main
+        h6.product-list__heading
+          a(href="") #{name}
+        ul.product-list__vote
+          each item in [1, 2, 3, 4, 5]
+            li.product-list__stars
+              a.product-list__link(href="")
+                i.product-list__icon.fa.fa-star
+        p.product-list__text #{intro}
+        h6.product-list__rate
+          | #{rate}
+          span.product-list__unit đ
+        .product-list__buttons
+          +button-green("MUA NGAY")
+          - var list = ["search", "heart"]
+          each item in list
+            span.product-list__btn
+              a.product-list__link.product-list__link--btn(href="")
+                i.product-list__icon--btn.fa(class="fa-"+item)

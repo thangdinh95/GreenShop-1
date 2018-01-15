@@ -1,0 +1,13 @@
+include modules/head/head
+include modules/product/product
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [Common Product-List]
+    .container
+      .row
+        .col-3
+        .col-md-9.col-xs-12
+          +product-list('images/product-img2.jpg', 'Cây ngọc ngân', 'Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá xanh đốm trắng.', '279.000')
