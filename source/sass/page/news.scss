@@ -1,0 +1,14 @@
+.news-page {
+  margin-bottom: 101px;
+}
+.news-list {
+  margin-bottom: 65px;
+  &__item {
+    margin-bottom: 55px;
+  }
+}
+.news-paging {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}

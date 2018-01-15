@@ -28,6 +28,9 @@
         "title": "Header of product page",
         "url": "product-header"
       },{
+        "title": "News page",
+        "url": "news"
+      },{
         "title": "Popup",
         "url": "popup"
       },{

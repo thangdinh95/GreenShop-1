@@ -1,0 +1,40 @@
+.paging {
+  flex-flow: row wrap;
+  &__item {
+    margin-left: 9px;
+    margin-bottom: 9px;
+    &--first {
+      margin-left: 0;
+    }
+    &.active {
+      background-color: $green;
+    }
+  }
+  &__item:first-child &__link,
+  &__item:last-child &__link  {
+    border-radius: 0;
+  }
+  &__link {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 16px 19px 14px;
+    color: $gray-55;
+    &--first,
+    &--last {
+      font-size: 12px;
+    }
+    &:visited,
+    &:active {
+      color: $gray-55;
+    }
+    &:hover,
+    &.active {
+      background-color: $green;
+      color: $white;
+    }
+    @include respond-to('phone-and-down') {
+      padding:  8px 10px 6px;
+    }
+  }
+}
