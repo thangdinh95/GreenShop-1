@@ -1,0 +1,24 @@
+.signup {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  &__block {
+    margin-bottom: 60px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__buttons {
+    margin-top: -45px;
+    margin-left: -7px;
+  }
+  &__button {
+    display: inline-block;
+    margin: 0 7px;
+    .button {
+      padding: 9px 45px;
+      @include respond-to('smallphone-and-down') {
+        padding: 9px 30px;
+      }
+    }
+  }
+}
