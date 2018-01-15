@@ -36,6 +36,9 @@
       },{
         "title": "product grid style",
         "url": "product-grid"
+      },{
+        "title": "Sign Up",
+        "url": "signup"
       }
     ]
   }

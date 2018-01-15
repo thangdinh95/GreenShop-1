@@ -1,0 +1,16 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/header/header
+include modules/signup/signup
+include modules/button/button
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [Sign Up Page]
+    +header
+    +signup
+    +footer
+    script(src="js/main.js")

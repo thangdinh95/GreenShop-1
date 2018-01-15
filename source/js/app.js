@@ -9,6 +9,7 @@ $(document).ready(function(){
   var $btnDropdown = $('.js-btn-dropdown');
   var $menuDropdown = $('.js-menu-dropdown');
   var $popupLabel = $('.js-popup__label');
+  var $formLabel = $('.js-form__label');
 
   $menuBtn.on('click', function(){
     if ($window.outerWidth() >= 992) {
@@ -39,5 +40,8 @@ $(document).ready(function(){
   });
   $popupLabel.on('click', function() {
     $(this).addClass('popup__label--checked');
+  });
+  $formLabel.on('click', function() {
+    $(this).addClass('form__label--checked');
   });
 });

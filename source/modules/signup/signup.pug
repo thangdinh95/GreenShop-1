@@ -1,0 +1,49 @@
+mixin signup
+  .signup
+    .container
+      form.singup__form(action="")
+        .signup__block
+          h5.signup__title.title-size-18 THÔNG TIN CÁ NHÂN
+          .row
+            .col-sm-6
+              label.form__label(for="name")
+                | Họ và tên
+                sup.form__icon *
+              input.form__input#name(type="text")
+            .col-sm-6
+              label.form__label(for="phone")
+                | Số ĐT
+                sup.form__icon *
+              input.form__input#phone(type="text")
+            .col-sm-6
+              label.form__label(for="mail")
+                | Địa chỉ email
+                sup.form__icon *
+              input.form__input#mail(type="text")
+            .col-sm-6
+              label.form__label(for="website")
+                | Website của bạn
+                sup.form__icon *
+              input.form__input#website(type="text")
+            .col-12
+              label.form__label.form__label--checkbox.js-form__label(for='form__input--checkbox')
+                input.form__input.form__input--checkbox#form__input--checkbox(type='checkbox')
+                | Đăng kí nhận thông tin qua email
+        .signup__block
+          h5.signup__title.title-size-18 THÔNG TIN TÀI KHOẢN
+          .row
+            .col-sm-6
+              label.form__label(for="password")
+                | Mật khẩu
+                sup.form__icon *
+              input.form__input#password(type="text")
+            .col-sm-6
+              label.form__label(for="password-again")
+                | Nhập lại mật khẩu
+                sup.form__icon *
+              input.form__input#password-again(type="text")
+        .signup__block.signup__buttons
+          .signup__button
+            +button-white('QUAY LẠI')
+          .signup__button
+            +button-green('ĐĂNG KÝ')
