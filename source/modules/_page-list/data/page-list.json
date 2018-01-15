@@ -39,6 +39,9 @@
       },{
         "title": "Sign Up",
         "url": "signup"
+      },{
+        "title": "List page",
+        "url": "list"
       }
     ]
   }
