@@ -27,6 +27,9 @@
       },{
         "title": "Popup",
         "url": "popup"
+      },{
+        "title": "product grid style",
+        "url": "product-grid"
       }
     ]
   }

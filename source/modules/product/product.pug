@@ -23,3 +23,27 @@ mixin product-list(src, name, intro, rate)
             span.product-list__btn
               a.product-list__link.product-list__link--btn(href="")
                 i.product-list__icon--btn.fa(class="fa-"+item)
+mixin product-grid(state, text)
+  .product-grid
+    .product-grid__imgwrap
+      img.product-grid__img(src="images/product/1.png", alt="product img")
+      if (state)
+        .state(class="state--"+state)= text
+      .product-grid__btnwrap
+        a.button.button--green.product-grid__btn(href="#!") MUA NGAY
+        a.btn-icon(href="#!")
+          i.fa.fa-search
+    .product-grid__info
+      h6.product-grid__name
+        a(href="#!") Cây chân chim
+      .product-grid__rate
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star
+        i.fa.fa-star-half-o
+      .product-grid__price
+        span.product-grid__newprice
+          | 250.000 đ
+        span.product-grid__oldprice
+          del 250.000 đ

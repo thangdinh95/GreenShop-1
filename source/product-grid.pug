@@ -1,0 +1,16 @@
+include modules/head/head
+include modules/product/product
+
+doctype html
+html
+  +head(head.home)
+  body
+    .container
+      .row
+        .col-lg-6
+          +product-grid("green", "NEW")
+          .row
+            .col-md-6
+              +product-grid('red', '-50%')
+            .col-md-6
+              +product-grid('red', '-25%')
