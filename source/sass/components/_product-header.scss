@@ -1,0 +1,42 @@
+.product-header {
+  margin-bottom: 25px;
+  @include clearfix;
+  &__img {
+    width: 100%;
+    margin-bottom: 29px;
+  }
+}
+.view-btn {
+  float: left;
+  &__btn {
+    display: inline-block;
+    font-size: 18px;
+    color: $gray-70;
+    margin-right: 13px;
+    padding: 10px 0;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+.show-item {
+  float: right;
+  margin-left: 39px;
+  &--last {
+    margin-left: 0;
+  }
+  &__label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 11px 18px 11px 0;
+  }
+  &__select {
+    font-family: $roboto;
+    border: 1px solid $gray-90;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 11px 15px;
+    background-color: $white;
+  }
+}

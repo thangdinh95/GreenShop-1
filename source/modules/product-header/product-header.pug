@@ -1,0 +1,22 @@
+mixin product-header
+  .product-header
+    img.product-header__img(src="images/product-page-banner.png", alt="")
+    .view-btn
+      a.view-btn__btn(href="#!")
+        i.fa.fa-th
+      a.view-btn__btn(href="#!")
+        i.fa.fa-th-list
+    .show-item
+      span.show-item__label Show
+      select.show-item__select
+        option 5
+        option 10
+        option 15
+        option 20
+    .show-item.show-item--last
+      span.show-item__label Sắp xếp theo
+      select.show-item__select
+        option Tên sản phẩm
+        option Giá từ thấp đến cao
+        option Giá từ cao xuống thấp
+        option Mới nhất
