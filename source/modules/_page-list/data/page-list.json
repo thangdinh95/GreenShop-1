@@ -28,6 +28,9 @@
         "title": "Header of product page",
         "url": "product-header"
       },{
+        "title": "product grid style",
+        "url": "product-grid"
+      },{
         "title": "News page",
         "url": "news"
       },{
@@ -48,6 +51,9 @@
       },{
         "title": "Comment block",
         "url": "comment"
+      },{
+        "title": "Home page",
+        "url": "index"
       }
     ]
   }

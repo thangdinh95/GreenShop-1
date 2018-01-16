@@ -10,6 +10,7 @@
 @import 'vendors/bootstrap-override-variable';
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'font-awesome';
+@import 'node_modules/owl.carousel/src/scss/owl.carousel';
 
 @import 'components/ui-elements';
 @import 'components/title';
@@ -28,6 +29,7 @@
 @import 'components/large-news';
 @import 'components/product';
 @import 'components/state';
+@import 'components/product-mini';
 @import 'components/product-grid';
 @import 'components/product-header';
 @import 'components/breadcrumb';
@@ -46,4 +48,5 @@
 @import 'layout/section';
 @import 'layout/sidebar';
 
+@import 'page/home';
 @import 'page/news';
