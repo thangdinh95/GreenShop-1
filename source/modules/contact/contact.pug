@@ -1,0 +1,40 @@
+include ../button/button
+mixin contact
+  .contact
+    .contact__map
+      iframe.contact__iframe(src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3723.8402995745605!2d105.81171381438699!3d21.039075085992845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMjY2IMSQ4buZaSBOaMOibiwgQmEgxJDDrG5oLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1516005928151" allowfullscreen)
+    .container
+      .row
+        .col-md-6
+          .contact__element
+            h5.contact__title.title-size-18 THÔNG TIN LIÊN HỆ
+            form.contact__form(action="")
+              label.form__label(for="name")
+                | Họ và tên
+                sup.form__icon *
+              input.form__input#name(type="text")
+              label.form__label(for="email")
+                | Địa chỉ email
+                sup.form__icon *
+              input.form__input#email(type="text")
+              label.form__label(for="phone")
+                | Số ĐT
+                sup.form__icon *
+              input.form__input#phone(type="text")
+              label.form__label(for="comment")
+                | Bình luận
+                sup.form__icon *
+              textarea.contact__textarea.form__input#comment(rows="9")
+              .contact__button
+                +button-green('LIÊN HỆ')
+        .col-md-6
+          .contact__element.contact__info
+            img.contact__logo(src="../../images/logo.png", alt="")
+            .contact__content
+              p.contact__text DKT được thành lập với niềm đam mê và khát vọng thành công trong lĩnh vực Thương mại điện tử.Chúng tôi đã và đang khẳng định được vị trí hàng đầu bằng những sản phẩm
+            .contact__connect.contact__connect--phone
+              i.contact__icon.contact__icon--phone.fa.fa-mobile
+              | Điện thoại : (84-4) 66.558.868
+            .contact__connect.contact__connect--email
+              i.contact__icon.fa.fa-envelope-o
+              | Email: info@dkt.com.vn

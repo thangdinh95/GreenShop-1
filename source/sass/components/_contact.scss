@@ -1,0 +1,60 @@
+.contact {
+  padding: 75px 0;
+  @include respond-to('phone-and-down') {
+    padding-bottom: 25px;
+  }
+  &__breadcrumb {
+    margin-bottom: -75px;
+  }
+  &__map {
+    margin-bottom: 55px;
+  }
+  &__iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+  }
+  &__element {
+    margin-bottom: 50px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__textarea {
+    height: auto;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    .button {
+      padding: 9px 45px;
+    }
+  }
+  &__info {
+    font-size: 12px;
+    color: $gray-55;
+    padding-left: 50px;
+    @include respond-to('phone-and-down') {
+      padding-left: 0;
+    }
+  }
+  &__logo {
+    margin-bottom: 25px;
+  }
+  &__text {
+    line-height: 23px;
+    margin-bottom: 35px;
+  }
+  &__connect {
+    margin-bottom: 10px;
+  }
+  &__icon {
+    font-size: 14px;
+    color: $green;
+    margin-right: 10px;
+    &--phone {
+      font-size: 17px;
+    }
+  }
+}

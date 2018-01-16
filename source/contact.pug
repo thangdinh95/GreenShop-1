@@ -1,0 +1,17 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/breadcrumb/breadcrumb
+include modules/contact/contact
+
+doctype html
+html
+  +head
+  body
+    +header
+    .container
+      .contact__breadcrumb
+        +breadcumb('Home', 'Liên hệ')
+    +contact
+    +footer
+    script(src="js/main.js")
