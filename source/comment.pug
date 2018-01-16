@@ -1,0 +1,15 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/comment/comment
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [Comment block]
+    .container
+      .row
+        .col-3
+        .col-9
+          +comment
+    script(src="js/main.js")

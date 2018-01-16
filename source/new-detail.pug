@@ -1,0 +1,24 @@
+include modules/_page-list/_page-list
+include modules/head/head
+include modules/header/header
+include modules/breadcrumb/breadcrumb
+include modules/sidebar/sidebar
+include modules/new-detail/new-detail
+include modules/footer/footer
+
+doctype html
+html
+  +head(head.home)
+  body
+    //- [New Detail page]
+    +header
+    .container
+      .new-detail__breadcrumb
+        +breadcumb('Home', 'Cây dạ lam')
+      .row
+        .col-lg-3.col-md-4
+          +sidebar('news', data)
+        .col-lg-9.col-md-8
+          +new-detail
+    +footer
+    script(src="js/main.js")

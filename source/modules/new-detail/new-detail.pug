@@ -1,0 +1,39 @@
+include ../news/news
+include ../comment/comment
+include ../button/button
+mixin new-detail
+  .new-detail
+    .new-detail__intro
+      +large-news('../../images/news/large-news-1.png', 'Cách bố trí hoa chậu trước cửa ấn tượng ngay lần đầu tiên')
+    p.new-detail__text 7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng, Những mẫu cây để bàn đang được giới văn phòng ưa chuộng, cây cảnh văn phòng để bàn thông dụng, những cây cảnh được giới văn phòng ưa chuộng
+    p.new-detail__text Cây bạch mã hoàng tử để bàn có chiều cao trung bình từ 20 – 40cm, dáng đẹp, lá cây màu xanh đậm với những đường vân vàng nhạt mọc đối xứng nhau trông rất sang trọng và lịch lãm.
+    p.new-detail__text Loại cây này ưa bóng, chịu được nhiệt độ thấp lại có khả năng tạo ẩm và thanh lọc không khí nên rất thích hợp đặt trong văn phòng làm việc có máy lạnh.
+    p.new-detail__text Cây bạch mã hoàng tử thường được chọn để đặt trên bàn làm việc của sếp, bàn nhỏ ở phòng tiếp khách hoặc bàn làm việc của các đấng mày râu.
+    p.new-detail__text 2. Cây trầu bà đế vương
+    p.new-detail__text Cây trầu bà đế vương tượng trưng cho quyền uy, phong thái dẫn đầu nên thích hợp để đặt trên bàn làm việc của người lãnh đạo, quản lý doanh nghiệp.
+    p.new-detail__text Tùy thuộc vào sở thích cá nhân và thiết kế chủ đạo của không gian phòng làm việc, bạn có thể chọn loại trầu bà đế vương xanh, trầu bá đế vương vàng hoặc trầu bà đế vương đỏ.
+    img.new-detail__image(src="../../images/news/large-news-1.png", alt="")
+    p.new-detail__text Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa nhà luôn được đầu tư và trang trí khá bắt mắt. Cũng có thể nói đây là bộ mặt của ngôi nhà, là ấn tượng đầu tiên khzi một vị khách ghé chơi nhà bạn đấy. Hãy cùng Sài Gòn Hoa tham khảo một vài cách bố trí chậu cây hoa cảnh ngay trước cửa nhà sao cho ấn tượng nhất nhé!
+    p.new-detail__text 7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng, Những mẫu cây để bàn đang được giới văn phòng ưa chuộng, cây cảnh văn phòng để bàn thông dụng, những cây cảnh được giới văn phòng ưa chuộng
+    .new-detail__comments
+      .new-detail__show
+        .new-detail__heading.title-size-18 BÌNH LUẬN (3)
+        .new-detail__comment
+          +comment
+          .new-detail__reply
+            +comment
+        .new-detail__comment
+          +comment
+      .new-detail__write
+        .new-detail__heading.title-size-18 VIẾT BÌNH LUẬN:
+          form.new-detail__form(action="")
+            .row
+              .col-lg-4
+                input.form__input(type="text", placeholder="Họ và tên:")
+              .col-lg-4
+                input.form__input(type="text", placeholder="Email:")
+              .col-lg-4
+                input.form__input(type="text", placeholder="Phone:")
+              .col-lg-12
+                textarea.new-detail__textarea.form__input(rows="6", placeholder="Bình luận")
+            +button-green('GỬI')

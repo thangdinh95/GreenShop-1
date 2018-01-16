@@ -42,6 +42,12 @@
       },{
         "title": "Contact page",
         "url": "contact"
+      },{
+        "title": "New Detail page",
+        "url": "new-detail"
+      },{
+        "title": "Comment block",
+        "url": "comment"
       }
     ]
   }
