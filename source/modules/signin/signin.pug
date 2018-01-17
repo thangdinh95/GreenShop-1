@@ -1,0 +1,26 @@
+include ../button/button
+mixin signin
+  .signin
+    .container
+      .row
+        .col-sm-6
+          .signin__element
+            h5.signin__title.signin__title--left.title-size-18 THÔNG TIN CÁ NHÂN
+            form.signin__form(action="")
+              label.form__label(for="email") Email của bạn
+              input.form__input#email(type="text")
+              label.form__label(for="password") Email của bạn
+              input.form__input#password(type="password")
+              .signin__remember
+                label.signin__label.form__label.form__label--checkbox.js-form__label(for='form__input--checkbox')
+                  input.form__input.form__input--checkbox#form__input--checkbox(type='checkbox')
+                  | Ghi nhớ tài khoản
+                a.signin__forget(href="") Bạn quên mật khẩu?
+              .signin__button
+                +button-green('ĐĂNG NHẬP')
+        .col-sm-6
+          .signin__element
+            h5.signin__title.signin__title--right.title-size-18 BẠN CHƯA CÓ TÀI KHOẢN?
+            p.signin__text Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn ! Ngoài ra còn có rất nhiều chính sách và ưu đãi cho các thành viên citybike
+            .signin__button
+              +button-green('ĐĂNG KÝ')
