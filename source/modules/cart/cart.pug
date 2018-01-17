@@ -1,0 +1,51 @@
+mixin cart(data)
+  .cart
+    .container
+      h5.cart__title.title-size-18 GIỎ HÀNG
+      table.cart__table
+        tbody.cart__body
+          tr.cart__tr.cart__tr--heading
+            each item in data.list
+              th.cart__th #{item}
+          each item in [1, 2, 3]
+            tr.cart__tr.cart__tr--element
+              td.cart__images.cart__td.cart__td--images
+                img.cart__image(src="../../images/product-img2.jpg", alt="")
+              td.cart__name.cart__td
+                a.cart__link(href="") CÂY VĂN PHÒNG
+              td.cart__price.cart__td
+                | 270.000
+                span.cart__unit đ
+              td.cart__number.cart__td
+                input.cart__input.form__input(type="text", value="1")
+              td.cart__total.cart__td
+                | 270.000
+                span.cart__unit đ
+              td.cart__delete.cart__td
+                a.cart__link
+                  i.cart__icon.fa.fa-trash
+      .cart__buttons
+        .cart__button
+          +button-white('HỦY ĐƠN HÀNG')
+        .cart__button
+          +button-green('TIẾP TỤC MUA')
+      .cart__pay-wrap
+        table.cart__pay
+          tr.cart__tr
+            td.cart__td.cart__td--pay.cart__heading TỔNG TIỀN ( CHƯA THUẾ )
+            td.cart__td.cart__td--pay.cart__paynumber
+              | 270.000
+              span.cart__unit đ
+          tr.cart__tr
+            td.cart__td.cart__td--pay.cart__heading THUẾ ( VAT 10% )
+            td.cart__td.cart__td--pay.cart__paynumber
+              | 27.000
+              span.cart__unit đ
+          tr.cart__tr
+            td.cart__td.cart__td--pay.cart__td--total.cart__heading TỔNG PHẢI THANH TOÁN
+            td.cart__td.cart__td--pay.cart__td--total.cart__paynumber
+              | 297.000
+              span.cart__unit đ
+      .cart__buttons
+        .cart__button
+          +button-green('THANH TOÁN')

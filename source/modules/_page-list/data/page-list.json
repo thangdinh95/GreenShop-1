@@ -40,7 +40,7 @@
         "title": "product grid style",
         "url": "product-grid"
       },{
-        "title": "Sign Up",
+        "title": "Sign Up page",
         "url": "signup"
       },{
         "title": "Contact page",
@@ -54,6 +54,9 @@
       },{
         "title": "Home page",
         "url": "index"
+      },{
+        "title": "Cart page",
+        "url": "cart"
       }
     ]
   }
