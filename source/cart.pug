@@ -2,7 +2,7 @@ include modules/_page-list/_page-list
 include modules/head/head
 include modules/header/header
 include modules/breadcrumb/breadcrumb
-include modules/signup/signup
+include modules/cart/cart
 include modules/button/button
 include modules/footer/footer
 
@@ -10,11 +10,10 @@ doctype html
 html
   +head(head.home)
   body
-    //- [Sign Up Page]
+    //- [Cart Page]
     +header
     .container
-      .contact__breadcrumb
-        +breadcumb('Home', 'Đăng ký')
-    +signup
+      +breadcrumb('Home', 'Giỏ hàng')
+    +cart(data)
     +footer
     script(src="js/main.js")
