@@ -43,6 +43,9 @@
         "title": "Sign Up page",
         "url": "signup"
       },{
+        "title": "Sign In page",
+        "url": "signin"
+      },{
         "title": "Contact page",
         "url": "contact"
       },{
