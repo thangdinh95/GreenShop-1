@@ -60,6 +60,9 @@
       },{
         "title": "Cart page",
         "url": "cart"
+      },{
+        "title": "Grid page",
+        "url": "grid"
       }
     ]
   }

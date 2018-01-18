@@ -1,0 +1,30 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/sidebar/sidebar
+include modules/breadcrumb/breadcrumb
+include modules/product-header/product-header
+include modules/product/product
+include modules/pagination/pagination
+
+doctype html
+html
+  +head
+  body
+    +header
+    main.grid-page
+      .container
+        +breadcrumb('Home', 'Danh sách sản phẩm')
+        .row
+          .col-lg-3.col-md-4
+            +sidebar('general', data)
+          .col-lg-9.col-md-8
+            +product-header
+            .row
+              - for (i = 0; i < 12; i++)
+                .col-lg-4.col-md-6
+                  +product-grid
+            .grid-paging
+              +pagination(4)
+    +footer
+    script(src="js/main.js")

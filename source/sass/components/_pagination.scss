@@ -34,7 +34,21 @@
       color: $white;
     }
     @include respond-to('phone-and-down') {
-      padding:  8px 10px 6px;
+      padding:  10px 14px 8px;
+      &--first,
+      &--last {
+        font-size: 0;
+        padding: 10px 14px 4px;
+        &::after {
+          content: '\f100';
+          font-family: 'FontAwesome';
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      &--last::after {
+        content: '\f101';
+      }
     }
   }
 }
