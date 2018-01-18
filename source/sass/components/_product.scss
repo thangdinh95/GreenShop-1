@@ -9,7 +9,6 @@
   @include respond-to('phone-and-down') {
     flex-wrap: wrap;
     padding: 0;
-    padding-top: 20px;
   }
   &__element {
     display: inline-block;
@@ -26,6 +25,9 @@
   }
   &__images {
     width: 230px;
+    @include respond-to('phone-and-down') {
+      width: 100%;
+    }
   }
   &__main {
     padding: 20px;

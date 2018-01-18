@@ -1,0 +1,14 @@
+.list-page {
+  margin-bottom: 189px;
+}
+.list-product {
+  margin-bottom: 76px;
+  &__item {
+    margin-bottom: 30px;
+  }
+}
+.list-paging {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}

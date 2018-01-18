@@ -63,6 +63,9 @@
       },{
         "title": "Grid page",
         "url": "grid"
+      },{
+        "title": "List page",
+        "url": "list"
       }
     ]
   }

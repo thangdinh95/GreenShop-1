@@ -1,0 +1,30 @@
+include modules/head/head
+include modules/header/header
+include modules/footer/footer
+include modules/sidebar/sidebar
+include modules/breadcrumb/breadcrumb
+include modules/product/product
+include modules/pagination/pagination
+include modules/product-header/product-header
+
+doctype html
+html
+  +head
+  body
+    +header
+    main.list-page
+      .container
+        +breadcrumb('Home', 'Danh sách sản phẩm')
+        .row
+          .col-md-3
+            +sidebar('general', data)
+          .col-md-9
+            +product-header
+            ul.list-product
+              - for ( i = 0; i < 5; i++)
+                li.list-product__item
+                  +product-list('images/product-img2.jpg', 'Cây ngọc ngân', 'Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá xanh đốm trắng.', '279.000')
+        .list-paging
+          +pagination(4)
+    +footer
+    script(src="js/main.js")
